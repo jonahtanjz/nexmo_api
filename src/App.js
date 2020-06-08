@@ -69,7 +69,7 @@ function App() {
     
     for (let i = 0; i < numbers.length; i++) {
       const to = numbers[i];
-      setTimeout(() => sendMessage(nexmo, from, to, text), 2000);
+      setTimeout(() => sendMessage(nexmo, from, to, text), 50);
     }
   }
 
