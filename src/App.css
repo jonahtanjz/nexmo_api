@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.root {
+  margin-top: 50px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.status {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.sendButton {
+  text-align: center;
+}
