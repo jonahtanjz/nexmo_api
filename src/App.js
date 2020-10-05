@@ -43,14 +43,11 @@ function App() {
   function sendMessage(nexmo, from, to, text) {
     nexmo.message.sendSms(from, to, text, (err, responseData) => {
       if (err) {
-        console.log("1")
           addStatus(to, err.toString())
       } else {
           if(responseData.messages[0]['status'] === "0") {
-            console.log("2")
               addStatus(to, "Message sent successfully.");
           } else {
-              console.log("3")
               addStatus(to, "Failed to send. Please try again.");
           }
       }
