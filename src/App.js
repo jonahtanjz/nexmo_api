@@ -68,6 +68,8 @@ function App() {
       const to = numbers[i];
       setTimeout(() => sendMessage(nexmo, from, to, text), 50);
     }
+
+    alert('SMS submitted for sending')
   }
 
   return (
@@ -102,14 +104,6 @@ function App() {
             <input className="btn btn-primary" type="submit" value="Send" />
           </div>
         </form>
-      </div>
-      <div class="status">
-        <h1>Status:</h1>
-        {
-          messageStatus.length !== 0
-          ? messageStatus.split("\n").map((i,key) => {return <div key={key}>{i}</div>;})
-          : <p>No message sent yet</p>
-        }
       </div>
     </div>
   );
